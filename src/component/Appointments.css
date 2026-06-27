@@ -1,0 +1,135 @@
+.appointment {
+  position: relative;
+  overflow: hidden;
+  margin: 40px 16px;
+  box-sizing: border-box;
+}
+
+.appointment__img-desktop,
+.appointment__img-mobile {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.appointment__img-mobile {
+  display: none;
+}
+
+.appointment__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42%;
+  height: 100%;
+  background: rgba(237, 224, 247, 0.92);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: left;
+}
+
+.appointment__eyebrow {
+  font-size: 13px;
+  font-style: italic;
+  color: #5a3fa0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.appointment__heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.appointment__subtext {
+  font-size: 14px;
+  font-style: italic;
+  color: #5a3fa0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.appointment__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 10px 18px;
+  background: #1a1a2e;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  border-radius: 4px;
+  width: fit-content;
+  transition: background 0.2s;
+}
+
+.appointment__btn:hover {
+  background: #2e2e5e;
+}
+
+.appointment__btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .appointment__eyebrow {
+  font-size: 34px;
+    }
+  .appointment {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 12px;
+  }
+
+  .appointment__img-desktop {
+    display: none;
+  }
+
+  .appointment__img-mobile {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    order: 1;
+  }
+
+  .appointment__content {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 24px 20px;
+    background: #ede0f7;
+    order: 2;
+    text-align: center;
+    align-items: anchor-center;
+  }
+
+  .appointment__heading {
+    font-size: 40px;
+  }
+  .appointment__subtext {
+  font-size: 34px;
+  }
+  .appointment__btn{
+    font-size: 34px;
+  }
+}

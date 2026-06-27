@@ -1,0 +1,152 @@
+.choose-school {
+  margin: 40px 16px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.choose-school__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1a3a8f;
+  margin: 0 0 24px;
+}
+
+/* ── Desktop grid ── */
+.choose-school__grid {
+  display: flex;
+  gap: 12px;
+}
+
+.choose-school__slider-wrapper {
+  display: none;
+}
+
+/* ── Card shared styles ── */
+.choose-school__card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1;
+  min-height: 280px;
+}
+
+.choose-school__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+.choose-school__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 12px 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.2) 70%, transparent 100%);
+  color: #fff;
+  z-index: 2;
+}
+
+.choose-school__card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+
+.choose-school__card-desc {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.4;
+  opacity: 0.95;
+}
+
+/* ── Mobile slider ── */
+@media (max-width: 749px) {
+  .choose-school {
+    margin: 20px 8px;
+    padding: 0;
+  }
+
+  .choose-school__title {
+    font-size: 45px;
+    margin-bottom: 16px;
+  }
+
+  .choose-school__grid {
+    display: none;
+  }
+
+  .choose-school__slider-wrapper {
+    display: block;
+  }
+
+  .choose-school__slider {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .choose-school__track {
+    display: flex;
+    transition: transform 0.35s ease;
+    will-change: transform;
+  }
+
+  .choose-school__slide {
+    min-width: 100%;
+    min-height: 260px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .choose-school__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .choose-school__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s, width 0.2s;
+  }
+
+  .choose-school__dot:focus {
+    outline: 3px solid rgba(26,58,143,0.25);
+  }
+
+  .choose-school__dot--active {
+    background: #1a3a8f;
+    width: 24px;
+    border-radius: 4px;
+  }
+
+  .choose-school__overlay {
+    padding: 12px 12px 45px;
+  }
+
+  .choose-school__card-title {
+    font-size: 45px;
+  }
+
+  .choose-school__card-desc {
+    font-size: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .choose-school__track {
+    transition: none !important;
+  }
+}
