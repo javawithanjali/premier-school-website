@@ -19,7 +19,7 @@ function Exhibition() {
   const [visible, setVisible] = useState(4);
 
   useEffect(() => {
-const update = () => setVisible(window.innerWidth <= 640 ? 1 : 4);
+    const update = () => setVisible(window.innerWidth <= 640 ? 1 : 4);
     update();
     window.addEventListener('resize', update);
     return () => window.removeEventListener('resize', update);
@@ -54,23 +54,17 @@ const update = () => setVisible(window.innerWidth <= 640 ? 1 : 4);
       </div>
 
       <div className="exhibition__controls">
-        <button
-          className="exhibition__btn"
-          onClick={prev}
-          disabled={index === 0}
-          aria-label="Previous"
-        >
-          ←
-        </button>
-        <button
-          className="exhibition__btn"
-          onClick={next}
-          disabled={index >= cards.length - Math.floor(visible)}
-          aria-label="Next"
-        >
-          →
-        </button>
+        <button className="exhibition__btn" onClick={prev} disabled={index === 0} aria-label="Previous">←</button>
+        <button className="exhibition__btn" onClick={next} disabled={index >= cards.length - Math.floor(visible)} aria-label="Next">→</button>
       </div>
+
+
+      <div className="exhibition__curve">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,0 Q720,80 1440,0 L1440,80 L0,80 Z" fill="#ffffff"/>
+        </svg>
+      </div>
+
     </section>
   );
 }

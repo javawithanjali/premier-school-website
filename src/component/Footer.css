@@ -1,7 +1,5 @@
 .footer {
   background: linear-gradient(135deg, #2a1a5e 0%, #4a2a8e 100%);
-  margin: 0 16px 16px;
-  border-radius: 12px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -94,17 +92,13 @@
   margin: 0;
 }
 
-/* ── Mobile ── */
 @media (max-width: 640px) {
-  .footer {
-    margin: 0 12px 12px;
-    border-radius: 10px;
-  }
 
   .footer__main {
     flex-direction: column;
     gap: 20px;
     padding: 24px 20px;
+    align-items: center;
   }
 
   .footer__logo img {

@@ -12,7 +12,6 @@
   margin: 0 0 24px;
 }
 
-/* ── Desktop grid ── */
 .choose-school__grid {
   display: flex;
   gap: 12px;
@@ -22,13 +21,11 @@
   display: none;
 }
 
-/* ── Card shared styles ── */
 .choose-school__card {
   position: relative;
   border-radius: 8px;
   overflow: hidden;
   flex: 1;
-  min-height: 280px;
 }
 
 .choose-school__image {
@@ -49,6 +46,7 @@
   background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.2) 70%, transparent 100%);
   color: #fff;
   z-index: 2;
+  text-align: left;
 }
 
 .choose-school__card-title {
@@ -65,7 +63,15 @@
   opacity: 0.95;
 }
 
-/* ── Mobile slider ── */
+@media (max-width: 989px) {
+    .choose-school__card-desc{
+        font-size: 9px;
+    }
+    .choose-school__card-title {
+   
+     font-size: 12px;
+    }
+}
 @media (max-width: 749px) {
   .choose-school {
     margin: 20px 8px;
@@ -73,7 +79,7 @@
   }
 
   .choose-school__title {
-    font-size: 45px;
+    font-size: 28px;
     margin-bottom: 16px;
   }
 
@@ -137,11 +143,11 @@
   }
 
   .choose-school__card-title {
-    font-size: 45px;
+    font-size: 18px;
   }
 
   .choose-school__card-desc {
-    font-size: 30px;
+    font-size: 15px;
   }
 }
 

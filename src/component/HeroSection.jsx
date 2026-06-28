@@ -11,6 +11,10 @@ function HeroSection() {
   const col2 = [boyPlay, girlsGroup, girlStudy, boyPlay, girlsGroup, girlStudy]
   const col3 = [girlsGroup, girlStudy, boyPlay, girlsGroup, girlStudy, boyPlay]
 
+  const handleSubmit = (event) => {
+    event.preventDefault()
+  }
+
   return (
     <section className="hero">
 
@@ -73,16 +77,22 @@ function HeroSection() {
       </div>
 
       {/* Right: Form */}
-      <div className="hero__form">
+      <form className="hero__form" onSubmit={handleSubmit}>
         <h3>Enquire Now</h3>
-        <input type="text" placeholder="Parent's Name" />
-        <input type="tel" placeholder="Phone number" />
-        <input type="text" placeholder="Which grade are you looking for?" />
-        <button type="button">
+        <label className="sr-only" htmlFor="parent-name">Parent's Name</label>
+        <input id="parent-name" type="text" placeholder="Parent's Name" />
+
+        <label className="sr-only" htmlFor="phone-number">Phone number</label>
+        <input id="phone-number" type="tel" placeholder="Phone number" />
+
+        <label className="sr-only" htmlFor="grade-interest">Grade you are looking for</label>
+        <input id="grade-interest" type="text" placeholder="Which grade are you looking for?" />
+
+        <button type="submit">
           <span className="hero__form-icon">↗</span>
           SUBMIT
         </button>
-      </div>
+      </form>
 
     </section>
   )

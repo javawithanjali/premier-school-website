@@ -1,7 +1,6 @@
 .appointment {
   position: relative;
   overflow: hidden;
-  margin: 40px 16px;
   box-sizing: border-box;
 }
 
@@ -20,9 +19,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 42%;
+  width: 40%;
   height: 100%;
-  background: rgba(237, 224, 247, 0.92);
+  background: #DEC1FF;
   padding: 40px 36px;
   display: flex;
   flex-direction: column;
@@ -34,7 +33,7 @@
 }
 
 .appointment__eyebrow {
-  font-size: 13px;
+  font-size: 20px;
   font-style: italic;
   color: #5a3fa0;
   margin: 0;
@@ -50,7 +49,7 @@
 }
 
 .appointment__subtext {
-  font-size: 14px;
+  font-size: 20px;
   font-style: italic;
   color: #5a3fa0;
   margin: 0;
@@ -89,15 +88,13 @@
   font-size: 11px;
 }
 
-/* Mobile */
 @media (max-width: 640px) {
     .appointment__eyebrow {
-  font-size: 34px;
+  font-size: 18px;
     }
   .appointment {
     display: flex;
     flex-direction: column;
-    margin: 24px 12px;
   }
 
   .appointment__img-desktop {
@@ -110,6 +107,7 @@
     object-fit: cover;
     object-position: center top;
     order: 1;
+    margin-top: -40px;
   }
 
   .appointment__content {
@@ -124,12 +122,12 @@
   }
 
   .appointment__heading {
-    font-size: 40px;
+    font-size: 22px;
   }
   .appointment__subtext {
-  font-size: 34px;
+  font-size: 18px;
   }
   .appointment__btn{
-    font-size: 34px;
+    font-size: 11px;
   }
 }

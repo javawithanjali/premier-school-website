@@ -73,6 +73,8 @@
     padding: 16px;
     align-items: center;
     overflow: hidden;
+    top: 44px;
+    margin-top: -58px;
   }
 
   .navbar__logo {

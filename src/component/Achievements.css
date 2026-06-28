@@ -7,6 +7,7 @@
   padding: 20px;
   width: 100%;
   max-width: 1000px;
+  margin: 0 auto;
 }
 .achievements__image {
   width: 100%;
