@@ -41,6 +41,7 @@
   font-size: 14px;
   display: block;
   letter-spacing: 0.05em;
+  margin-top: -28px;
 }
 
 .hero__venue {
@@ -51,6 +52,7 @@
   padding: 4px 16px;
   gap: 12px;
   color: #1a1a2e;
+  justify-content: space-evenly
 }
 
 .hero__venue-divider {
