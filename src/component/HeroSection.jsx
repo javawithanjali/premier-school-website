@@ -17,8 +17,6 @@ function HeroSection() {
 
   return (
     <section className="hero">
-
-      {/* Left: Text */}
       <div className="hero__text">
         <h1 className="hero__heading">
           Discover Gurugram's<br />
@@ -38,8 +36,6 @@ function HeroSection() {
           </div>
         </div>
       </div>
-
-      {/* Center: Image columns */}
       <div
         className="hero__images"
         onMouseEnter={() => setPaused(true)}
@@ -76,16 +72,15 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* Right: Form */}
       <form className="hero__form" onSubmit={handleSubmit}>
         <h3>Enquire Now</h3>
-        <label className="sr-only" htmlFor="parent-name">Parent's Name</label>
+        <label className="sr-only" htmlFor="parent-name"></label>
         <input id="parent-name" type="text" placeholder="Parent's Name" />
 
-        <label className="sr-only" htmlFor="phone-number">Phone number</label>
+        <label className="sr-only" htmlFor="phone-number"></label>
         <input id="phone-number" type="tel" placeholder="Phone number" />
 
-        <label className="sr-only" htmlFor="grade-interest">Grade you are looking for</label>
+        <label className="sr-only" htmlFor="grade-interest"></label>
         <input id="grade-interest" type="text" placeholder="Which grade are you looking for?" />
 
         <button type="submit">
