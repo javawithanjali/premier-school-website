@@ -45,13 +45,13 @@ function Footer() {
           <div>
             <p className="footer__label">Follow us on</p>
             <div className="footer__socials">
-              <a href="#" aria-label="Instagram" className="footer__social-btn">
+              <a href="https://www.instagram.com/premierschoolsexhibition/" aria-label="Instagram" className="footer__social-btn">
                 <img src={instagram} alt="Instagram" />
               </a>
-              <a href="#" aria-label="Facebook" className="footer__social-btn">
+              <a href="https://www.facebook.com/PremierSchoolsExhibition/" aria-label="Facebook" className="footer__social-btn">
                 <img src={facebook} alt="Facebook" />
               </a>
-              <a href="#" aria-label="YouTube" className="footer__social-btn">
+              <a href="https://www.youtube.com/c/PremierSchoolsExhibition" aria-label="YouTube" className="footer__social-btn">
                 <img src={youtube} alt="YouTube" />
               </a>
             </div>

@@ -71,7 +71,6 @@
   border-radius: 4px;
   width: fit-content;
   transition: background 0.2s;
-  margin: 0 auto;
 }
 
 .appointment__btn:hover {
@@ -130,5 +129,6 @@
   }
   .appointment__btn{
     font-size: 11px;
+    margin: 0 auto;
   }
 }

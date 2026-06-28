@@ -7,13 +7,13 @@ import girlsGroup from '../assets/images/Mask group (7).png'
 function HeroSection() {
   const [paused, setPaused] = useState(false)
 
-  const col1 = [girlStudy, boyPlay, girlsGroup, girlStudy, boyPlay, girlsGroup]
-  const col2 = [boyPlay, girlsGroup, girlStudy, boyPlay, girlsGroup, girlStudy]
-  const col3 = [girlsGroup, girlStudy, boyPlay, girlsGroup, girlStudy, boyPlay]
-
   const handleSubmit = (event) => {
     event.preventDefault()
   }
+
+  const col1 = [girlStudy, boyPlay, girlsGroup, girlStudy, boyPlay, girlsGroup]
+  const col2 = [boyPlay, girlsGroup, girlStudy, boyPlay, girlsGroup, girlStudy]
+  const col3 = [girlsGroup, girlStudy, boyPlay, girlsGroup, girlStudy, boyPlay]
 
   return (
     <section className="hero">
