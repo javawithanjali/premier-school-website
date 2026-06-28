@@ -15,18 +15,22 @@ import HeroSection from './component/HeroSection'
 function App() {
   return (
     <div className="app">
-      <a className="skip-link" href="#main-content">
+      {/* <a className="skip-link" href="#main-content">
         Skip to content
-      </a>
+      </a> */}
       <main id="main-content" className="app__main" aria-label="Main content">
-        <Navbar />
-        <HeroSection />
-        <Achievements />
-        <Participation />
-        <ChooseSchool />
+        <div className="app__main-inner">
+          <Navbar />
+          <HeroSection />
+          </div>
+          <Achievements />
+          <Participation />
+          <ChooseSchool />
         <Appointments />
         <Exhibition />
         <Footer />
+              
+
       </main>
     </div>
   )

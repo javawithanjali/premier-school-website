@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './HeroSection.css'
 import girlStudy from '../assets/images/girl-study.png'
 import boyPlay from '../assets/images/boy-play.png'
-import girlsGroup from '../assets/images/girls-group.png'
+import girlsGroup from '../assets/images/Mask group (7).png'
 
 function HeroSection() {
   const [paused, setPaused] = useState(false)
@@ -21,6 +21,7 @@ function HeroSection() {
           <span className="hero__heading-bold">Top 30+ Schools</span><br />
           <span className="hero__heading-sub">ALL IN ONE PLACE</span>
         </h1>
+
         <div className="hero__venue">
           <div className="hero__venue-left">
             <p className="hero__venue-name">Apparel House,</p>
@@ -72,19 +73,16 @@ function HeroSection() {
       </div>
 
       {/* Right: Form */}
-      <form className="hero__form" aria-labelledby="hero-form-title">
-        <h3 id="hero-form-title">Enquire Now</h3>
-        <label className="hero__form-label" htmlFor="hero-parent-name">Parent's Name</label>
-        <input id="hero-parent-name" type="text" placeholder="Parent's Name" />
-        <label className="hero__form-label" htmlFor="hero-phone-number">Phone number</label>
-        <input id="hero-phone-number" type="tel" placeholder="Phone number" />
-        <label className="hero__form-label" htmlFor="hero-grade-question">Which grade are you looking for?</label>
-        <input id="hero-grade-question" type="text" placeholder="Which grade are you looking for?" />
-        <button type="submit">
+      <div className="hero__form">
+        <h3>Enquire Now</h3>
+        <input type="text" placeholder="Parent's Name" />
+        <input type="tel" placeholder="Phone number" />
+        <input type="text" placeholder="Which grade are you looking for?" />
+        <button type="button">
           <span className="hero__form-icon">↗</span>
           SUBMIT
         </button>
-      </form>
+      </div>
 
     </section>
   )
